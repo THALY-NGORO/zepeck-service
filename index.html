@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zepeck Services - Personal Shopper</title>
+    <link rel="icon" type="image/png" href="img/zepeck_services_logo.png">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="components/whatsapp-chat.js"></script>
+</head>
+<body class="bg-gray-50">
+    <custom-navbar></custom-navbar>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-r from-yellow-400 to-yellow-500 text-white py-16 sm:py-20 px-4">
+        <div class="container mx-auto text-center max-w-4xl">
+            <div class="flex justify-center mb-6">
+                <div class="bg-white/90 rounded-full p-2 shadow-lg">
+                    <img src="img/zepeck_services_logo.png" alt="Zepeck Services" class="w-12 h-12 object-contain">
+                </div>
+            </div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">T'as besoin d'un article ?</h1>
+            <p class="text-xl md:text-2xl mb-8">On te le trouve. Envoie une photo, une idée ou une description.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="https://wa.me/+242064956987" class="bg-black hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-full transition duration-300 transform hover:-translate-y-1 hover:scale-105 animate-pulse">
+                    Commander maintenant
+                </a>
+                <a href="#services" class="bg-white hover:bg-gray-100 text-black font-bold py-3 px-6 rounded-full transition duration-300 transform hover:-translate-y-1 hover:scale-105">
+                    Voir nos services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-12 sm:py-16 px-4">
+
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Comment ça marche ?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-yellow-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="camera" class="text-yellow-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">1. Tu repères un article</h3>
+                    <p class="text-gray-600">Photo, idée, description... tout passe.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-yellow-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="send" class="text-yellow-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">2. Tu nous envoies ça</h3>
+                    <p class="text-gray-600">Via WhatsApp ou upload photo directement.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-yellow-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="search" class="text-yellow-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">3. On part en mission</h3>
+                    <p class="text-gray-600">On trouve le produit exact ou le plus proche.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-yellow-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="package" class="text-yellow-600 w-8 h-8"></i>
+                    </div>
+                    <h3 class="font-bold mb-2">4. On te livre</h3>
+                    <p class="text-gray-600">Tu valides → on achète → on livre.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nos Services (affiche) -->
+    <section class="py-12 sm:py-16 px-4 bg-yellow-50" id="services">
+
+        <div class="container mx-auto max-w-5xl">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6 text-yellow-700">Nos services</h2>
+                    <ul class="space-y-4 text-gray-800">
+                        <li>
+                            <h3 class="font-semibold text-lg">Recherche personnalisée</h3>
+                            <p class="text-gray-700 text-sm md:text-base">Tu envoies une photo, une idée ou une description. On trouve l'article exact (ou le plus proche).</p>
+                        </li>
+                        <li>
+                            <h3 class="font-semibold text-lg">Achat sur mesure</h3>
+                            <p class="text-gray-700 text-sm md:text-base">Vêtements hommes / femmes / enfants, chaussures et accessoires (sacs, parfums, montres, bijoux, etc.).</p>
+                        </li>
+                        <li>
+                            <h3 class="font-semibold text-lg">Livraison rapide</h3>
+                            <p class="text-gray-700 text-sm md:text-base">Express (le jour même) &rarr; <span class="font-semibold">2500 FCFA</span> · Standard (plus tard) &rarr; <span class="font-semibold">1500 FCFA</span>.</p>
+                        </li>
+                        <li>
+                            <h3 class="font-semibold text-lg">Conseil style</h3>
+                            <p class="text-gray-700 text-sm md:text-base">Suggestions de modèles similaires si l'article n'existe pas, conseils sur la taille et l'assortiment.</p>
+                        </li>
+                        <li>
+                            <h3 class="font-semibold text-lg">Échange &amp; retours</h3>
+                            <p class="text-gray-700 text-sm md:text-base">Possibilité de changer un article si la taille ou le style ne conviennent pas (les frais de livraison s'appliquent à nouveau).</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="rounded-3xl overflow-hidden shadow-lg bg-white">
+                        <img src="img/maillot.webp" alt="Maillots et vêtements" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="rounded-3xl overflow-hidden shadow-lg bg-white">
+                        <img src="img/accessoires.webp" alt="Accessoires" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="rounded-3xl overflow-hidden shadow-lg bg-white">
+                        <img src="img/sacs.webp" alt="Sacs" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="rounded-3xl overflow-hidden shadow-lg bg-white">
+                        <img src="img/sandales.webp" alt="Sandales" class="w-full h-48 object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="py-12 sm:py-16 px-4 bg-gray-100">
+
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-12">Ce qu'on peut trouver pour toi</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1 hover:scale-105">
+                    <img src="img/sneakers.webp" alt="Sneakers et sandales" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold mb-2">Sneakers</h3>
+                        <p class="text-gray-600">Tu veux une paire stylée ? On te trouve la bonne.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1 hover:scale-105">
+                    <img src="img/bijoux.webp" alt="Parfums et bijoux" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold mb-2">Parfums &amp; bijoux</h3>
+                        <p class="text-gray-600">Parfums, montres, bijoux... le détail qui fait la différence.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1 hover:scale-105">
+                    <img src="img/accessoires.webp" alt="Accessoires" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold mb-2">Accessoires</h3>
+                        <p class="text-gray-600">Chapeaux, bijoux, sacs - le détail qui fait la différence.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1 hover:scale-105">
+                    <img src="img/vetements.webp" alt="Vêtements" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold mb-2">Vêtements</h3>
+                        <p class="text-gray-600">Homme, femme, enfant - le style qui te ressemble.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Commander en pagaille -->
+    <section class="py-10 sm:py-12 px-4 bg-white">
+
+        <div class="container mx-auto max-w-3xl">
+            <div class="bg-gradient-to-r from-yellow-400 to-yellow-500 rounded-3xl shadow-lg p-8 flex flex-col md:flex-row md:items-center md:justify-between gap-6 text-white">
+                <div>
+                    <h2 class="text-2xl font-bold mb-2">Commander en pagaille</h2>
+                    <p class="text-sm md:text-base">Envoie-nous directement l'article que tu veux et on s'occupe du reste.</p>
+                </div>
+                <div class="space-y-1 text-sm md:text-base">
+                    <p><span class="font-semibold">Instagram :</span> Zepeck_services</p>
+                    <p><span class="font-semibold">WhatsApp :</span> +242 06 495 69 87</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-12 sm:py-16 px-4 bg-black text-white">
+
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Prêt à trouver ton article idéal ?</h2>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <a href="https://wa.me/+242064956987" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full transition duration-300 flex items-center justify-center">
+                    <i data-feather="message-circle" class="mr-2"></i> Commander par WhatsApp
+                </a>
+                <a href="https://www.instagram.com/zepeck_services?igsh=MXU2YmNkbXpjdmdhaw==" class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-6 rounded-full transition duration-300 flex items-center justify-center">
+                    <i data-feather="instagram" class="mr-2"></i> Commander via Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <custom-footer></custom-footer>
+    <custom-whatsapp-chat></custom-whatsapp-chat>
+
+    <script>
+        feather.replace();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
